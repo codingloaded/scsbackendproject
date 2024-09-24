@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require ("express");
 const app = express();
-const port = 5000;
+const PORT = 5000;
 
 const cookieParser = require("cookie-parser")
 const path = require("path")
@@ -19,6 +19,6 @@ app.get("/",(req,res)=>{
 res.send("hello")
 })
 
-app.listen(port,()=>{
-    console.log(`file running on => http://localhost:${port} `)
+app.listen(PORT,()=>{
+    console.log(`file running on => http://localhost:${PORT} `)
 })
